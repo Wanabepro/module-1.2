@@ -123,11 +123,33 @@ img {
     overflow: hidden;
 }
 
+.services__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
 .services__heading {
     font-size: 28px;
     font-weight: bold;
     position: relative;
-    margin-bottom: 32px;
+}
+
+.services__header-right {
+    display: flex;
+    gap: 32px;
+    display: none;
+}
+
+.services__repair-button,
+.services__check-status-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .services__heading::before {
@@ -217,6 +239,14 @@ img {
         display: flex;
     }
 
+    .services {
+        padding: 24px 24px;
+    }
+
+    .services__heading::before {
+        left: -24px;
+    }
+
     .services___content {
         display: flex;
         gap: 42px;
@@ -224,6 +254,7 @@ img {
 
     .services__right,
     .services__right img {
+        width: 360px;
         border-radius: 6px;
     }
 
@@ -236,33 +267,37 @@ img {
 
 @media (min-width: 1120px) {
 
-    .header__left-group {
-        gap: 42px;
+    .header {
+        display: none;
     }
 
-    .header__left-group::after {
-        left: 60px;
+    .services {
+        padding: 24px 34px;
     }
 
-    .header__call-button,
-    .header__chat-button,
-    .header__profile-button {
+    .services__header-right {
         display: flex;
     }
 
-    .services___content {
-        display: flex;
-        gap: 42px;
+    .services__heading::before {
+        left: -34px;
+    }
+
+    .services__navigation-list {
+        flex-wrap: wrap;
+    }
+
+    .services__additional-text-1 {
+        display: none;
+    }
+
+    .services__additional-text-2 {
+        display: block;
+        margin-bottom: 16px;
     }
 
     .services__right,
     .services__right img {
-        border-radius: 6px;
-    }
-
-    .services__additional-text-1 {
-        display: block;
-        margin-top: 24px;
-        margin-bottom: 16px;
+        width: 532px;
     }
 }
