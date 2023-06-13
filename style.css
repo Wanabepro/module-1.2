@@ -172,7 +172,6 @@ img {
 .services__navigation-list {
     list-style-type: none;
     display: flex;
-    gap: 16px;
 }
 
 .services__navigation-item {
