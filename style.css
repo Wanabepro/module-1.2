@@ -91,6 +91,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .header__call-button,
@@ -210,6 +211,7 @@ img {
     background: none;
     border: none;
     margin-bottom: 16px;
+    cursor: pointer;
 }
 
 .services__right {
