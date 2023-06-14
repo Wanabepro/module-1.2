@@ -188,19 +188,28 @@ a {
 }
 
 .services__navigation-item {
+  padding: 2px;
+}
+
+.services__navigation-link {
+  display: block;
   white-space: nowrap;
   padding: 8px 16px;
   border-radius: 6px;
   font-size: 16px;
-  cursor: pointer;
-}
-
-.services__navigation-item a {
   color: #7e7e82;
+  transition: all 300ms;
 }
 
-.services__navigation-item:first-child {
-  border: 2px solid #b8ffec;
+.services__navigation-link:focus-visible {
+  outline: none;
+}
+
+.services__navigation-item:first-child .services__navigation-link,
+.services__navigation-link:hover,
+.services__navigation-link:focus,
+.services__navigation-link:active {
+  outline: 2px solid #b8ffec;
   background-color: #fff;
 }
 
